@@ -31,5 +31,11 @@
 /* 여기서 그냥 block을 쓰면 그 한줄씩 먹어서 세로로 배치되겠지만 inline속성을 유지하면서 padding 위아래가 먹히게 할려면 inline-block하게 함
  */
 
- .header .header-tit{}
+ .header .header-tit{text-align: center;}
+ .header .header-tit {text-align: center;}
+ .header .header-tit h1 {background-color: #4aa8d4; font-size: 28px; padding: 5px 20px 6px 20px; display: inline-block; color: #fff; margin-top: 40px; font-weight: normal; text-transform: uppercase;}
+ /* h1은 블록속성이라 가능 */
+ /* 인라인속성이 필요한게 박스 색이 내용까지 나오게 하기 위해서 */
+ /* 하지만 마진이나 패딩은 인라인에서 안먹히는 속성이라 인라인블록필요 */
+ .header .header-tit a {display: inline-block; background-color: #2698cb; font-size: 18px; color: #fff; padding: 5px 20px 6px 20px; margin-top: -5px;}
  .header .header-icon{}
