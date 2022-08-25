@@ -26,3 +26,17 @@ charset "utf-8"
 웹접근성을 위해서는 스킵메뉴를 만들어줘야 한다(skip Navigation)
 :tab으로 이동할때 금방금방 이동하게 만들어주는 기능
 (장애우분들 같으분들 위해 필요-탭으로 이동)
+focus,active로 활성화 될때 css를 달리하게 함
+
+background의 여러가지의 속성을 쓸려면 
+background-image가 아닌 background로 써야함
+또한 repeat-x 가로축 방향으로만 사진을 반복시키는 걸 의미
+center top 해상도가 달라져도 해당 위치에 사진을 고정하기에 움직이지 않음
+
+padding:10px 0px 10px 13px
+위 오른쪽 아래 왼쪽(시계방향)으로 보면된다-이렇게 값 다주는건 롱핸드
+부분적으로 딱 주는건 숏핸드라고함
+
+css를 쓸 때에도 자식것을 내려써줄 때에 되도록이면
+길지 않다면 css만 봐두 구조가 보일 수 있도록
+.header .header-menu a이렇게 해주면 보기가 좋다
