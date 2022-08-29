@@ -97,3 +97,11 @@ overflow:hidden,text-overflow:ellipsis,white-space:nowrap
 
 스프라이트이미지기법으로 할때에는 꼭 되도록이면 background준
 태그에 width와 height는 주자
+
+기본적으로 text-align속성은 block요소에 해주되 
+정렬되는 것은 block요소 안에 있는 inline요소이다
+즉 div에 text-align을 해주고 실제로 그 안에서 정렬되는 애들은 a나 span같은 애들이다
+
+(사진+글)조합은
+사진에다가 position:absolute주고 top:0;left:0주면 그만큼 영역이 없는걸로
+간주하니 그 옆에 글자들이 올것이다
