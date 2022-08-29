@@ -81,6 +81,7 @@ IR효과
 
 position:absolute는 해당영역이 없어진다는점 따라서 많이쓰면 좋지않다.
 position:relative는 absolute의 기준이 되어준다
+주로 두개를 항상 거의 같이쓴다고 보면 좋다
 
 글자가 적다면 그자체를 그냥 이미지로 넣어주는게 좋을 수 있다
 
@@ -90,3 +91,9 @@ img태그도 인라인 속성을 가진다
 만들생각하지말고 
 세로줄이면 레이아웃의 border-right 줘서
 가로줄이면 레이아웃의 border-bottom줘서 하면 된다
+
+글자 넘어갈때 글자수 줄이기
+overflow:hidden,text-overflow:ellipsis,white-space:nowrap
+
+스프라이트이미지기법으로 할때에는 꼭 되도록이면 background준
+태그에 width와 height는 주자
