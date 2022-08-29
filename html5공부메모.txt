@@ -83,3 +83,5 @@ position:absolute는 해당영역이 없어진다는점 따라서 많이쓰면 �
 position:relative는 absolute의 기준이 되어준다
 
 글자가 적다면 그자체를 그냥 이미지로 넣어주는게 좋을 수 있다
+
+img태그도 인라인 속성을 가진다
