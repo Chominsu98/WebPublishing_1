@@ -123,3 +123,5 @@ margin-right:-1을 쓰는경우 두줄을 한줄처럼 보이게 할 때 주로 
 
 float을 하면 자동으로 inline-block화 되는 성질이 있어서
 width나 text-align등이 가능
+
+&middot이 점을찍어주는 엔티티 코드이다
