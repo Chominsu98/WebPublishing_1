@@ -19,6 +19,9 @@ body, input, textarea, select, button, table {
 /* 이미지,로그인폼 테두리 초기화 */
 img,fieldset{border: 0;}
 
+/* 버튼 초기화 */
+button{border: 0;}
+
 /* 폰트스타일 초기화 */
 em,address{font-style: normal;}
 /* 불릿기호 초기화 */
