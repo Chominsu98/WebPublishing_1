@@ -125,3 +125,14 @@ float을 하면 자동으로 inline-block화 되는 성질이 있어서
 width나 text-align등이 가능
 
 &middot이 점을찍어주는 엔티티 코드이다
+
+float을 쓰게 되면 text-align보다 강하기 때문에 text-align이 안 먹히게 된다
+
+:before 가상요소라는 것을 사용하면 content:"ㅊㅊ"이렇게 하면
+가상으로 내가 할려는 부분에 ㅊㅊ가 들어가게 된다
+
+<즉 세로작대기를 만들수있는 방법>
+1.border-right:1px solid #ccc
+2.:before{content:"";width:1px;height:12px;background:#ccc;position:absolute;top:2px;left:0px}
+3.작대기 이미지 스프라이트를 넣기
+
