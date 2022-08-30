@@ -51,7 +51,7 @@
         </div>
         <!-- 헤더부분 -->
         <div id="contents">
-            <div id="cont_nav">
+            <div id="cont_nav" style="display: none;">
                 <div class="container">
                     <h2 class="ir_su">전체메뉴</h2>
                     <div class="nav">
@@ -444,5 +444,23 @@
         </div>
         <!-- 푸터부분 -->
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(".tit .btn").click(function(e){
+            e.preventDefault();
+            //$("#cont_nav").css("display","block");
+            //$("#cont_nav").show();
+            //$("#cont_nav").fadeIn();
+            //$("#cont_nav").slideDown();
+            //$("#cont_nav").toggle();
+            //$("#cont_nav").fadeToggle();
+            $("#cont_nav").slideToggle(200);
+            $(this).toggleClass("on");
+        
+        })
+    </script>
+
+    
 </body>
 </html>
