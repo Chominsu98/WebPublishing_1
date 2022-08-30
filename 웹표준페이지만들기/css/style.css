@@ -29,7 +29,7 @@
 
 .header{}
 .header .header-menu{text-align: right;}
-.header .header-menu a{columns: #fff;padding: 10px 0px 10px 13px; display: inline-block;}
+.header .header-menu a{color: #fff;padding: 10px 0px 10px 13px; display: inline-block;}
 .header .header-menu a:hover{color:#666}
 /* a태그는 인라인 속성이라 자체적으로는 text-align이 안 먹힘 */
 /* 따라서 그 위에 부모한테 먹여서 옮긴다 */
@@ -174,3 +174,46 @@
 .notice_hover2 li a span em{visibility: hidden;position: absolute;bottom: 0;left: 0;background: rgba(0,0,0,0.7);color: white;width: 100%;}
 .notice_hover2 li a span:hover em{visibility: visible;}
 .notice_hover2 li a span strong{padding-top: 3px;display: inline-block;font-size: 12px;}
+
+/* 콘텐츠요소를 보이지 않게 하는 방법*/
+.tab_menu{position: relative;border: 1px solid #ccc; padding: 8px;height: 105px;}
+.tab_menu ul {overflow: hidden;border-bottom: 1px solid #ccc;}
+.tab_menu ul li{float: left;border: 1px solid #ccc;margin-right: -1px;margin-bottom: -1px;}
+.tab_menu ul li a{padding: 5px 10px;display: block;}
+.tab_menu ul li ul{position: absolute;left: 0;top: 48px;width: 270px;border: 0;}
+.tab_menu ul li ul li{float:none;border:0;background: url(../img/dot.gif) no-repeat 9px 8px; padding-left: 18px;}
+.tab_menu ul li ul li a{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;width: 100%;padding: 0 0 3px 0;}
+.tab_menu ul li.active{background: #2c94c4;}
+.tab_menu ul li.active a{color: white;}
+.tab_menu ul li.active ul li a{color: #333;}
+
+/* 여기위에서 ul li a를 먹이면 그 밑에 아래에 있는 a에도 먹히는 것을 볼수있다 따라서 조금은 중복이 되지만
+밑에서 다시 설정해서 막아주는 것을 볼 수 있다 */
+/* 실제 여기서 active 달린 클래스로 나중에 script로 업데이트해줄거임 */
+
+/* 게시판4 */
+.notice4{margin-top: 15px;border: 1px solid #ccc;position: relative;}
+.notice4 h4{border-bottom: 1px solid #ccc;;font-size: 14px;color: #0093bd;padding:8px 10px;font-weight: bold;}
+.notice4 h4 em{color: #cf3292;}
+.notice4 ul{padding: 10px;}
+.notice4 li{overflow: hidden;padding-left:8px;padding-bottom: 3px; background: url(../img/dot.gif) no-repeat 0 8px;}
+.notice4 li a{float: left;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;width: 60%;}
+.notice4 li span{float: right;width: 30%;}
+.notice4 a.more{position: absolute; top: 9px;right: 9px;}
+
+/* 갤러리 */
+.gallery {position: relative; border: 1px solid #ccc; height: 254px; overflow: hidden;}
+.gallery h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; font-weight: bold;}
+.gallery .gallery_btn {position: absolute; right: 5px; top: 7px;}
+.gallery .gallery_btn ul {overflow: hidden;}
+.gallery .gallery_btn li {float: left; margin: 1px 2px;}
+.gallery .gallery_btn li a {display: block; width: 23px; height: 23px; background: url(../img/icon.png) no-repeat;}
+.gallery .gallery_btn li.gb_icon1 a {background-position: -150px -120px;}
+.gallery .gallery_btn li.gb_icon2 a {background-position: -150px -143px;}
+.gallery .gallery_btn li.gb_icon3 a {background-position: -150px -166px;}
+.gallery .gallery_btn li.gb_icon4 a {background-position: -150px -189px;}
+.gallery .gallery_btn li.gb_icon1 a:hover {background-position: -173px -120px;}
+.gallery .gallery_btn li.gb_icon2 a:hover {background-position: -173px -143px;}
+.gallery .gallery_btn li.gb_icon3 a:hover {background-position: -173px -166px;}
+.gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px;}
+.gallery .gallery_img img{width: 100%;}
