@@ -232,3 +232,12 @@
 .login_footer{margin-top: 5px;}
 .login_footer li{display: inline;}
 .login_footer ul li a{font-size: 12px;}
+
+/* 팝업 */
+.popup{margin-top: 15px;}
+.popup h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; font-weight: bold;}
+.popup ul{overflow: hidden;}
+.popup ul li{float: left;width: 93px;height: 93px;margin-right: 5px;}
+.popup ul li.last{margin-right: 0;}
+.popup ul li a{}
+.popup ul li img{width: 100%;}
