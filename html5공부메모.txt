@@ -136,3 +136,7 @@ float을 쓰게 되면 text-align보다 강하기 때문에 text-align이 안 �
 2.:before{content:"";width:1px;height:12px;background:#ccc;position:absolute;top:2px;left:0px}
 3.작대기 이미지 스프라이트를 넣기
 
+<탭메뉴 구성하는 방법>
+1.제이쿼리로 짜기
+2.자바스크립트로 반복문으로 해당 탭메뉴에 대한 event Listener 달아주고 해당 버튼들에 대해서 is_on클래스를 먹이고 아니고의 차이점을 부여함
+

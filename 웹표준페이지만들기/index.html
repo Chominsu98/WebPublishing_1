@@ -355,7 +355,7 @@
                                     </li>
                                     <li>
                                         <a href="#">공지사항2</a>
-                                        <ul style="display:none">
+                                        <ul>
                                             <li><a href="#">두 번째 공지사항 탭 메뉴 테스트목록</a></li>
                                             <li><a href="#">두 번째 공지사항 탭 메뉴 테스트목록</a></li>
                                             <li><a href="#">두 번째 공지사항 탭 메뉴 테스트목록</a></li>
@@ -364,7 +364,7 @@
                                     </li>
                                     <li>
                                         <a href="#">공지사항3</a>
-                                        <ul style="display:none">
+                                        <ul>
                                             <li><a href="#">세 번째 공지사항 탭 메뉴 테스트목록</a></li>
                                             <li><a href="#">세 번째 공지사항 탭 메뉴 테스트목록</a></li>
                                             <li><a href="#">세 번째 공지사항 탭 메뉴 테스트목록</a></li>
@@ -463,6 +463,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
+        //탭메뉴
+        var $tab_list=$(".tab_menu");
+        $tab_list.find("ul ul").hide();
+        $tab_list.find('li.active > ul').show();
+
+        function tabMenu(e){
+            e.preventDefault();
+            var $this=$(this);
+
+            $this.next("ul").show().parent("li").addClass("active").siblings('li').removeClass("active")
+            .find('>ul').hide();
+        }
+        $tab_list.find('ul>li>a').click(tabMenu).focus(tabMenu);
+
+        // 포커스를 주어야 웹접근성을 위하여 탭으로 이동할때 항목별로 접근할수있기에
+
+
          $('.ban').slick({
             infinite: true,
             slidesToShow: 3,
